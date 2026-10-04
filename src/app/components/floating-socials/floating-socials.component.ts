@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { AnalyticsService } from '../services/analytics.service';
-
+import { AnalyticsService } from '../../services/analytics.service';
 @Component({
   selector: 'app-floating-socials',
   standalone: true,
