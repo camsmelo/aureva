@@ -2,8 +2,8 @@ import { Component, effect, inject, input, output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { SERVICES } from '../site-data/site-data';
-import { AnalyticsService } from '../../services/analytics.service';
+import { SERVICES } from './site-data';
+import { AnalyticsService } from '../services/analytics.service';
 
 interface BookingData {
   name: string;
