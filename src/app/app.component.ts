@@ -1,14 +1,14 @@
 import { Component, inject } from '@angular/core';
-import { SiteHeaderComponent } from './components/site-header.component';
-import { HeroComponent } from './components/hero.component';
+import { SiteHeaderComponent } from './components/site-header/site-header.component';
+import { HeroComponent } from './components/hero/hero.component';
 import { ServicesComponent } from './components/services.component';
-import { WhyUsComponent } from './components/why-us.component';
-import { TestimonialsComponent } from './components/testimonials.component';
-import { BookingCtaComponent } from './components/booking-cta.component';
+import { WhyUsComponent } from './components/why-us/why-us.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { BookingCtaComponent } from './components/booking-cta/booking-cta.component';
 import { BookingModalComponent } from './components/booking-modal.component';
-import { SiteFooterComponent } from './components/site-footer.component';
+import { SiteFooterComponent } from './components/site-footer/site-footer.component';
 import { FloatingSocialsComponent } from './components/floating-socials.component';
-import { ContactComponent } from './components/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { AnalyticsService } from './services/analytics.service';
 
 @Component({
