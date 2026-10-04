@@ -1,5 +1,5 @@
 import { Component, ElementRef, output, viewChild } from '@angular/core';
-import { SERVICES, Service } from './site-data';
+import { SERVICES, Service } from '../site-data/site-data';
 
 @Component({
   selector: 'app-services',
