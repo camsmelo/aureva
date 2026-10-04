@@ -8,3 +8,5 @@ import { Component, output } from '@angular/core';
 export class BookingCtaComponent {
   readonly bookingRequested = output<void>();
 }
+
+//ajuste
