@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TESTIMONIALS } from './site-data';
+import { TESTIMONIALS } from '../site-data/site-data';
 
 @Component({
   selector: 'app-testimonials',

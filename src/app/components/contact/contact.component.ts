@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { AnalyticsService } from '../services/analytics.service';
+import { AnalyticsService } from '../../services/analytics.service';
 
 interface ContactPerson {
   name: string;
