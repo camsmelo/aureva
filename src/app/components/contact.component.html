@@ -1,0 +1,43 @@
+<section class="contact-section" id="contato" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="contact-heading">
+      <div>
+        <div class="eyebrow">FALE CONOSCO</div>
+        <h2 id="contact-title">Estamos prontas para<br>cuidar de você</h2>
+      </div>
+      <p>Escolha um dos responsáveis pelo atendimento e fale diretamente pelo WhatsApp.</p>
+    </div>
+
+    <div class="contact-grid">
+      @for (contact of contacts; track contact.name) {
+        <article class="contact-card">
+          <div class="contact-card-top">
+            <div class="contact-avatar" aria-hidden="true">{{ contact.name.charAt(0) }}</div>
+            <div>
+              <div class="contact-label">ATENDIMENTO AURÊVA</div>
+              <h3>{{ contact.name }}</h3>
+            </div>
+          </div>
+
+          <div class="contact-phone">
+            <span class="contact-phone-icon" aria-hidden="true">⌕</span>
+            <span>{{ contact.phone }}</span>
+          </div>
+
+          <a
+            class="contact-whatsapp"
+            [href]="contact.whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            [attr.aria-label]="'Falar com ' + contact.name + ' pelo WhatsApp'"
+            (click)="trackContactClick()"
+          >
+            <span class="whatsapp-symbol" aria-hidden="true">◔</span>
+            Falar pelo WhatsApp
+            <span aria-hidden="true">→</span>
+          </a>
+        </article>
+      }
+    </div>
+  </div>
+</section>

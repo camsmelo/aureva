@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eee7"/><stop offset="1" stop-color="#e5d4c4"/></linearGradient>
+ <radialGradient id="glow" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#fffaf5" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf5" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#6d4b39" flood-opacity=".15"/></filter>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/><circle cx="690" cy="100" r="280" fill="url(#glow)"/>
+<g opacity=".45" fill="none" stroke="#9b765e" stroke-width="2"><circle cx="110" cy="480" r="48"/><circle cx="110" cy="480" r="34"/><path d="M70 480h80M110 440v80"/></g>
+<g filter="url(#shadow)"><path d="M410 115c-43 0-76 35-76 78v75c0 42 24 71 48 91l-15 127h74l9-130h0l9 130h74l-15-127c24-20 48-49 48-91v-75c0-43-33-78-76-78z" fill="#c99473"/><path d="M350 260c42 29 107 29 149 0" fill="none" stroke="#9a664e" stroke-width="8"/><path d="M367 305c35 16 76 16 111 0" fill="none" stroke="#a97258" stroke-width="5"/><path d="M337 215l-77 67M563 215l77 67" stroke="#9a664e" stroke-width="30" stroke-linecap="round"/><path d="M365 490h-62M535 490h62" stroke="#6b4a3b" stroke-width="13" stroke-linecap="round"/></g><circle cx="685" cy="175" r="52" fill="#fff8f2" stroke="#9d7b65" stroke-width="3"/><path d="M655 175h60M685 145v60" stroke="#9d7b65" stroke-width="4"/>
+<text id="title" x="60" y="535" font-family="Georgia,serif" font-size="27" fill="#4f382d">Estética Corporal</text>
+<text id="desc" x="60" y="565" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#8a6c59">FIRMEZA • DEFINIÇÃO • BEM-ESTAR</text>
+</svg>

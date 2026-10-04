@@ -1,0 +1,39 @@
+{
+  "name": "aureva-clinica",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "server": "node server.js",
+    "start:all": "concurrently \"npm start\" \"npm run server\""
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "20.3.33",
+    "@angular/common": "20.3.33",
+    "@angular/compiler": "20.3.33",
+    "@angular/core": "20.3.33",
+    "@angular/forms": "20.3.33",
+    "@angular/platform-browser": "20.3.33",
+    "@angular/platform-browser-dynamic": "20.3.33",
+    "@angular/router": "20.3.33",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.15.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "nodemailer": "^7.0.6"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "20.3.33",
+    "@angular/cli": "20.3.33",
+    "@angular/compiler-cli": "20.3.33",
+    "typescript": "~5.8.0",
+    "concurrently": "^9.2.1"
+  },
+  "engines": {
+    "node": ">=20.19.0 <23"
+  }
+}

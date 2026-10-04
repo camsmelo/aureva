@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eee7"/><stop offset="1" stop-color="#e5d4c4"/></linearGradient>
+ <radialGradient id="glow" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#fffaf5" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf5" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#6d4b39" flood-opacity=".15"/></filter>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/><circle cx="690" cy="100" r="280" fill="url(#glow)"/>
+<g opacity=".45" fill="none" stroke="#9b765e" stroke-width="2"><circle cx="110" cy="480" r="48"/><circle cx="110" cy="480" r="34"/><path d="M70 480h80M110 440v80"/></g>
+<g filter="url(#shadow)"><path d="M380 95c-12 90-24 170-5 245l-35 150h83l28-147 28 147h83l-35-150c19-75 7-155-5-245h-142z" fill="#d0a080"/><path d="M420 120l-12 185M480 120l12 185" stroke="#9b6d55" stroke-width="5"/><g fill="none" stroke="#fff7ef" stroke-width="8" stroke-linecap="round"><path d="M335 330c-35-30-45-70-20-105"/><path d="M565 330c35-30 45-70 20-105"/><path d="M345 385c-38-22-52-53-43-83"/><path d="M555 385c38-22 52-53 43-83"/></g><path d="M350 470h-75M550 470h75" stroke="#6c4c3e" stroke-width="12" stroke-linecap="round"/></g><g transform="translate(650 170)"><circle cx="70" cy="70" r="60" fill="#fff8f2"/><path d="M38 70l22 22 43-48" fill="none" stroke="#9d765f" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text id="title" x="60" y="535" font-family="Georgia,serif" font-size="27" fill="#4f382d">Drenagem Linfática</text>
+<text id="desc" x="60" y="565" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#8a6c59">LEVEZA • MASSAGEM • BEM-ESTAR</text>
+</svg>

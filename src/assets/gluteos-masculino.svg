@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eee7"/><stop offset="1" stop-color="#e5d4c4"/></linearGradient>
+ <radialGradient id="glow" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#fffaf5" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf5" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#6d4b39" flood-opacity=".15"/></filter>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/><circle cx="690" cy="100" r="280" fill="url(#glow)"/>
+<g opacity=".45" fill="none" stroke="#9b765e" stroke-width="2"><circle cx="110" cy="480" r="48"/><circle cx="110" cy="480" r="34"/><path d="M70 480h80M110 440v80"/></g>
+<g filter="url(#shadow)"><path d="M385 110c-28 82-42 145-36 207 4 39 24 67 57 85l-22 86h132l-22-86c33-18 53-46 57-85 6-62-8-125-36-207h-45l-30 72-30-72z" fill="#b98161"/><ellipse cx="405" cy="328" rx="58" ry="76" fill="#9f694f"/><ellipse cx="495" cy="328" rx="58" ry="76" fill="#9f694f"/><path d="M450 250v104" stroke="#744d3e" stroke-width="6"/><path d="M390 292c-17 19-20 43-10 66M510 292c17 19 20 43 10 66" fill="none" stroke="#d9a384" stroke-width="7" stroke-linecap="round"/><path d="M450 245v-75" stroke="#6e4b3d" stroke-width="6"/><circle cx="450" cy="157" r="11" fill="#6e4b3d"/></g><g transform="translate(650 200)"><path d="M0 85h95" stroke="#876453" stroke-width="5"/><path d="M20 85l30-55 30 55" fill="none" stroke="#876453" stroke-width="5"/></g>
+<text id="title" x="60" y="535" font-family="Georgia,serif" font-size="27" fill="#4f382d">Preenchimento de Glúteos Masculino</text>
+<text id="desc" x="60" y="565" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#8a6c59">DEFINIÇÃO • PROPORÇÃO • ANATOMIA MASCULINA</text>
+</svg>

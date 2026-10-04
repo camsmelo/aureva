@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eee7"/><stop offset="1" stop-color="#e5d4c4"/></linearGradient>
+ <radialGradient id="glow" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#fffaf5" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf5" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#6d4b39" flood-opacity=".15"/></filter>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/><circle cx="690" cy="100" r="280" fill="url(#glow)"/>
+<g opacity=".45" fill="none" stroke="#9b765e" stroke-width="2"><circle cx="110" cy="480" r="48"/><circle cx="110" cy="480" r="34"/><path d="M70 480h80M110 440v80"/></g>
+<g filter="url(#shadow)"><circle cx="450" cy="300" r="175" fill="#d8aa8b"/><path d="M295 270c80-75 225-83 310 0" fill="none" stroke="#7b5746" stroke-width="15" stroke-linecap="round"/><path d="M350 315c25-18 55-18 80 0M470 315c25-18 55-18 80 0" fill="none" stroke="#7b5746" stroke-width="8" stroke-linecap="round"/><path d="M444 340c-12 30-13 45 4 56" fill="none" stroke="#a7755d" stroke-width="6"/><path d="M390 405c38 22 76 22 114 0" fill="none" stroke="#95604c" stroke-width="8" stroke-linecap="round"/><g fill="#f8dfc9" stroke="#a8755c" stroke-width="3"><circle cx="350" cy="195" r="13"/><circle cx="585" cy="245" r="10"/><circle cx="315" cy="355" r="8"/><circle cx="600" cy="375" r="14"/><circle cx="500" cy="165" r="7"/></g></g><g transform="translate(665 180)"><path d="M0 0c60 35 68 90 18 136" fill="none" stroke="#8e6a57" stroke-width="15" stroke-linecap="round"/><path d="M8 3l-18 20" stroke="#8e6a57" stroke-width="6"/><path d="M22 7l-5 25" stroke="#8e6a57" stroke-width="6"/></g>
+<text id="title" x="60" y="535" font-family="Georgia,serif" font-size="27" fill="#4f382d">Skincare Avançado</text>
+<text id="desc" x="60" y="565" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#8a6c59">PELE • CUIDADO • PROTOCOLO PERSONALIZADO</text>
+</svg>

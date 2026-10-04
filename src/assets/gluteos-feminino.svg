@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-labelledby="title desc">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f4eee7"/><stop offset="1" stop-color="#e5d4c4"/></linearGradient>
+ <radialGradient id="glow" cx="50%" cy="35%" r="70%"><stop offset="0" stop-color="#fffaf5" stop-opacity=".9"/><stop offset="1" stop-color="#fffaf5" stop-opacity="0"/></radialGradient>
+ <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="18" flood-color="#6d4b39" flood-opacity=".15"/></filter>
+</defs>
+<rect width="900" height="600" fill="url(#bg)"/><circle cx="690" cy="100" r="280" fill="url(#glow)"/>
+<g opacity=".45" fill="none" stroke="#9b765e" stroke-width="2"><circle cx="110" cy="480" r="48"/><circle cx="110" cy="480" r="34"/><path d="M70 480h80M110 440v80"/></g>
+<g filter="url(#shadow)"><path d="M375 120c-25 70-37 118-34 167 3 48 23 75 58 96l-28 105h158l-28-105c35-21 55-48 58-96 3-49-9-97-34-167h-45l-30 68-30-68z" fill="#d19d7c"/><ellipse cx="407" cy="330" rx="61" ry="78" fill="#b87e62"/><ellipse cx="493" cy="330" rx="61" ry="78" fill="#b87e62"/><path d="M450 255c-7 28-7 66 0 101" stroke="#8f5d4a" stroke-width="5" fill="none"/><path d="M395 300c-22 18-28 45-20 68M505 300c22 18 28 45 20 68" fill="none" stroke="#e6bea3" stroke-width="7" stroke-linecap="round"/><path d="M450 235v-60" stroke="#7b5a49" stroke-width="5"/><circle cx="450" cy="168" r="10" fill="#7b5a49"/></g><g stroke="#9a735f" stroke-width="4" fill="none"><path d="M670 240c-20 20-20 48 0 68M700 220c-20 20-20 48 0 68"/><path d="M650 325h90"/></g>
+<text id="title" x="60" y="535" font-family="Georgia,serif" font-size="27" fill="#4f382d">Preenchimento de Glúteos Feminino</text>
+<text id="desc" x="60" y="565" font-family="Arial,sans-serif" font-size="15" letter-spacing="2" fill="#8a6c59">VOLUME • CONTORNO • HARMONIA</text>
+</svg>

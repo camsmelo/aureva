@@ -1,0 +1,20 @@
+<section class="testimonials section" id="avaliacoes">
+  <div class="container testimonials-inner">
+    <div class="testimonial-title"><div class="eyebrow">DEPOIMENTOS</div><h2>Quem já viveu,<br>recomenda</h2></div>
+    <article class="testimonial-card">
+      <div class="avatar">{{ testimonials[testimonialIndex].initials }}</div>
+      <div class="testimonial-content">
+        <div class="stars">★★★★★</div>
+        <p>“{{ testimonials[testimonialIndex].text }}”</p>
+        <strong>{{ testimonials[testimonialIndex].name }}</strong>
+      </div>
+    </article>
+    <button class="testimonial-arrow" type="button" aria-label="Depoimento anterior" (click)="previous()">‹</button>
+    <button class="testimonial-arrow next" type="button" aria-label="Próximo depoimento" (click)="next()">›</button>
+  </div>
+  <div class="dots testimonial-dots">
+    @for (testimonial of testimonials; track testimonial.name; let i = $index) {
+      <button type="button" class="dot" [class.active]="i === testimonialIndex" [attr.aria-label]="'Depoimento ' + (i + 1)" (click)="select(i)"></button>
+    }
+  </div>
+</section>

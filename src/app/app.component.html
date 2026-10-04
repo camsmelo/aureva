@@ -1,0 +1,16 @@
+<app-site-header (bookingRequested)="openBooking()"/>
+<main>
+  <app-hero (bookingRequested)="openBooking()"/>
+  <app-services (bookingRequested)="openBooking($event)"/>
+  <app-why-us/>
+  <app-testimonials/>
+  <app-booking-cta (bookingRequested)="openBooking()"/>
+  <app-contact/>
+</main>
+
+@if (isBookingOpen) {
+  <app-booking-modal [selectedService]="selectedService" (closed)="closeBooking()"/>
+}
+
+<app-site-footer/>
+<app-floating-socials/>
