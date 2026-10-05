@@ -286,10 +286,13 @@
   gap: 14px;
   overflow-x: auto;
   overflow-y: hidden;
+
   scroll-behavior: smooth;
+
   scrollbar-width: none;
   padding: 2px 2px 8px;
-  scroll-snap-type: x proximity;
+
+  scroll-snap-type: none;
 }
 
 .services-grid::-webkit-scrollbar { display: none; }
@@ -720,11 +723,11 @@
   .services-heading > p { margin: 15px 0 0; }
 
   .services-grid {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    padding-bottom: 6px;
-  }
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: none;
+  padding-bottom: 6px;
+}
 
   .service-card {
     flex: 0 0 72%;
