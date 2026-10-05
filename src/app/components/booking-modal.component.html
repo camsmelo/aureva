@@ -1,0 +1,59 @@
+<div class="modal-backdrop" role="presentation" (click)="close()">
+  <section class="booking-modal" role="dialog" aria-modal="true" aria-labelledby="booking-title" (click)="$event.stopPropagation()">
+    <button class="modal-close" type="button" aria-label="Fechar formulário" (click)="close()">×</button>
+
+    @if (!submitSuccess) {
+      <div class="eyebrow">AGENDE SUA AVALIAÇÃO</div>
+      <h2 id="booking-title">Vamos cuidar de você?</h2>
+      <p class="modal-intro">Preencha seus dados e nossa equipe entrará em contato para confirmar o melhor horário.</p>
+
+      <form (ngSubmit)="submit()" #bookingForm="ngForm">
+        <div class="form-grid">
+          <label>Nome completo *
+            <input type="text" name="name" [(ngModel)]="booking.name" required maxlength="100" autocomplete="name" placeholder="Seu nome">
+          </label>
+          <label>WhatsApp *
+            <input type="tel" name="phone" [(ngModel)]="booking.phone" required maxlength="30" autocomplete="tel" placeholder="(11) 99999-9999">
+          </label>
+          <label>E-mail *
+            <input type="email" name="email" [(ngModel)]="booking.email" required maxlength="160" autocomplete="email" placeholder="voce@email.com">
+          </label>
+          <label>Serviço de interesse *
+            <select name="service" [(ngModel)]="booking.service" required>
+              <option value="">Selecione uma opção</option>
+              @for (service of services; track service.title) {
+                <option [value]="service.title">{{ service.title }}</option>
+              }
+              <option value="Ainda não sei">Ainda não sei</option>
+            </select>
+          </label>
+        </div>
+
+        <label>Como podemos ajudar?
+          <textarea name="message" [(ngModel)]="booking.message" rows="4" maxlength="1000" placeholder="Conte brevemente o que você gostaria de avaliar..."></textarea>
+        </label>
+
+        <label class="security-honeypot" aria-hidden="true">
+          Site
+          <input type="text" name="website" [(ngModel)]="booking.website" tabindex="-1" autocomplete="off">
+        </label>
+
+        @if (submitError) { <p class="form-error" role="alert">{{ submitError }}</p> }
+
+        <button class="modal-submit" type="submit" [disabled]="isSubmitting || !bookingForm.valid">
+          {{ isSubmitting ? 'Enviando...' : 'Enviar solicitação' }}
+          @if (!isSubmitting) { <span>→</span> }
+        </button>
+        <small class="privacy-note">Seus dados serão usados somente para contato sobre sua avaliação.</small>
+      </form>
+    } @else {
+      <div class="success-state">
+        <div class="success-icon">✓</div>
+        <div class="eyebrow">SOLICITAÇÃO ENVIADA</div>
+        <h2>Obrigada pelo contato!</h2>
+        <p>Os dados foram preparados para envio no WhatsApp da Aurêva. Nossa equipe poderá confirmar sua avaliação por lá.</p>
+        <button class="modal-submit" type="button" (click)="close()">Fechar</button>
+      </div>
+    }
+  </section>
+</div>
