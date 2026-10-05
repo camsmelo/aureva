@@ -1309,3 +1309,15 @@ html {
 body { margin: 0; min-width: 320px; overflow-x: hidden; }
 img, svg { max-width: 100%; }
 button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+
+
+/* Anti-bot honeypot: hidden from users, but available to automated form fillers. */
+.security-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
