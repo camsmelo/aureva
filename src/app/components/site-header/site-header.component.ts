@@ -50,10 +50,10 @@ export class SiteHeaderComponent implements AfterViewInit, OnDestroy {
     sections.forEach(section => this.observer?.observe(section));
   }
 
-  selectSection(id: string): void {
-    this.activeSection = id;
-    this.isMenuOpen = false;
-  }
+selectSection(id: string): void {
+  this.activeSection = id;
+  this.isMenuOpen = false;
+}
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;

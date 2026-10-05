@@ -1,5 +1,7 @@
 /* Aurêva — Angular component styles */
 
+
+
 :root {
   --cream: #f4ede2;
   --cream-2: #eee4d5;
@@ -1300,7 +1302,10 @@ button { font-family: inherit; }
   .service-card { flex-basis: 90%; }
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
+}
 body { margin: 0; min-width: 320px; overflow-x: hidden; }
 img, svg { max-width: 100%; }
 button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
