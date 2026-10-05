@@ -1331,3 +1331,57 @@ button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+/* =========================================
+   ANIMAÇÕES DOS BOTÕES
+   ========================================= */
+
+.primary-btn,
+.outline-btn,
+.light-btn,
+.text-btn {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.primary-btn:hover,
+.outline-btn:hover,
+.light-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(72, 52, 29, 0.16);
+}
+
+.primary-btn:active,
+.outline-btn:active,
+.light-btn:active {
+  transform: translateY(0) scale(0.97);
+  transition-duration: 0.1s;
+}
+
+.primary-btn span,
+.light-btn span,
+.text-btn span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.primary-btn:hover span,
+.light-btn:hover span,
+.text-btn:hover span {
+  transform: translateX(5px);
+}
+
+.text-btn:hover {
+  color: #8e6939;
+  transform: translateX(3px);
+}
+
+.outline-btn:hover {
+  background-color: #8e6939;
+  border-color: #8e6939;
+  color: #fff8ed;
+}
