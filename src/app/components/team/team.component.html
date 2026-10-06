@@ -1,0 +1,120 @@
+<section class="team-section" id="equipe">
+
+  <div class="container">
+
+    <!-- CABEÇALHO -->
+    <div class="team-header">
+      <span class="team-eyebrow">QUEM FAZ A AURÊVA</span>
+
+      <h2>Conheça quem está por trás da nossa história</h2>
+
+      <p>
+        Profissionais que unem experiência, cuidado e propósito
+        para proporcionar uma experiência única em cada atendimento.
+      </p>
+    </div>
+
+
+    <!-- CARDS DA EQUIPE -->
+    <div class="team-grid">
+
+      <!-- SÓCIO -->
+      <article
+        class="team-card"
+        [class.active]="activeMember === 0"
+        (mouseenter)="setActiveMember(0)"
+        (mouseleave)="clearActiveMember()"
+      >
+
+        <div class="team-photo">
+          <div class="photo-placeholder">
+            <span class="photo-icon">▧</span>
+            <span>SUA FOTO AQUI</span>
+          </div>
+        </div>
+
+        <div class="team-content">
+          <span class="team-role">SÓCIO</span>
+
+          <h3>Nome do Sócio</h3>
+
+          <div class="team-divider"></div>
+
+          <p>
+            Breve descrição sobre a formação, experiência profissional
+            e atuação dentro da Aurêva. Um texto curto que apresente
+            sua trajetória e seu papel na clínica.
+          </p>
+        </div>
+
+      </article>
+
+
+      <!-- SÓCIA -->
+      <article
+        class="team-card"
+        [class.active]="activeMember === 1"
+        (mouseenter)="setActiveMember(1)"
+        (mouseleave)="clearActiveMember()"
+      >
+
+        <div class="team-photo">
+          <div class="photo-placeholder">
+            <span class="photo-icon">▧</span>
+            <span>SUA FOTO AQUI</span>
+          </div>
+        </div>
+
+        <div class="team-content">
+          <span class="team-role">SÓCIA</span>
+
+          <h3>Nome da Sócia</h3>
+
+          <div class="team-divider"></div>
+
+          <p>
+            Breve descrição sobre a formação, especializações
+            e experiência profissional. Fale um pouco sobre
+            sua trajetória e como contribui para a Aurêva.
+          </p>
+        </div>
+
+      </article>
+
+
+      <!-- GERENTE -->
+      <article
+        class="team-card"
+        [class.active]="activeMember === 2"
+        (mouseenter)="setActiveMember(2)"
+        (mouseleave)="clearActiveMember()"
+      >
+
+        <div class="team-photo">
+          <div class="photo-placeholder">
+            <span class="photo-icon">▧</span>
+            <span>SUA FOTO AQUI</span>
+          </div>
+        </div>
+
+        <div class="team-content">
+          <span class="team-role">GERENTE</span>
+
+          <h3>Nome da Gerente</h3>
+
+          <div class="team-divider"></div>
+
+          <p>
+            Breve descrição sobre sua experiência na área de gestão,
+            suas principais responsabilidades e como contribui
+            para o funcionamento e experiência dos pacientes.
+          </p>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
