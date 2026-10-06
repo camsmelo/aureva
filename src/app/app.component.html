@@ -1,6 +1,103 @@
 <app-site-header (bookingRequested)="openBooking()"/>
 <main>
   <app-hero (bookingRequested)="openBooking()"/>
+
+  <section class="inauguration" id="inauguracao" aria-labelledby="inauguration-title">
+    <div class="inauguration-glow inauguration-glow-left" aria-hidden="true"></div>
+    <div class="inauguration-glow inauguration-glow-right" aria-hidden="true"></div>
+
+    <div class="container inauguration-container">
+      <div class="inauguration-topline">
+        <span class="inauguration-line"></span>
+        <span>EVENTO ESPECIAL · 09/10</span>
+        <span class="inauguration-line"></span>
+      </div>
+
+      <p class="inauguration-script">Coquetel de</p>
+      <h2 id="inauguration-title">INAUGURAÇÃO <span>AURÊVA</span></h2>
+
+      <div class="inauguration-date">
+        <div class="date-label">DIA</div>
+        <div class="date-main">09/10</div>
+        <div class="date-label">SEXTA-FEIRA</div>
+      </div>
+
+      <div class="inauguration-time">DAS 9H ÀS 20H</div>
+
+      <p class="inauguration-lead">
+        Venha viver essa experiência de perto, conhecer nosso espaço,
+        nossas tecnologias e nossa equipe de especialistas.
+      </p>
+
+      <div class="inauguration-special">
+        <div class="special-badge" aria-hidden="true">✦</div>
+        <p class="special-kicker">QUEM VIER NESSE DIA</p>
+        <p class="special-subtitle">GANHARÁ UM</p>
+        <p class="special-title">LAVIEEN</p>
+        <p class="special-description">TRATAMENTO DE PELE AVANÇADO</p>
+      </div>
+
+      <div class="inauguration-benefits" aria-label="Atrações do evento">
+        <div class="inauguration-benefit">
+          <span class="benefit-symbol">◌</span>
+          <strong>ESPUMANTE</strong>
+        </div>
+        <div class="inauguration-benefit">
+          <span class="benefit-symbol">♫</span>
+          <strong>MÚSICA</strong>
+        </div>
+        <div class="inauguration-benefit">
+          <span class="benefit-symbol">✧</span>
+          <strong>BRINDES</strong>
+        </div>
+        <div class="inauguration-benefit">
+          <span class="benefit-symbol">◇</span>
+          <strong>SORTEIOS</strong>
+        </div>
+        <div class="inauguration-benefit">
+          <span class="benefit-symbol">%</span>
+          <strong>DESCONTOS<br>EXCLUSIVOS</strong>
+        </div>
+        <div class="inauguration-benefit">
+          <span class="benefit-symbol">♡</span>
+          <strong>AVALIAÇÃO<br>GRATUITA</strong>
+        </div>
+      </div>
+
+      <div class="inauguration-details">
+        <div class="inauguration-detail">
+          <span class="detail-icon" aria-hidden="true">⌖</span>
+          <div>
+            <span class="detail-label">ONDE</span>
+            <strong>Rua Morgado de Mateus, 173</strong>
+            <small>Vila Mariana · São Paulo - SP</small>
+          </div>
+        </div>
+
+        <div class="inauguration-divider" aria-hidden="true"></div>
+
+        <a class="inauguration-detail inauguration-whatsapp" href="https://wa.me/5511969260809?text=Ol%C3%A1!%20Quero%20confirmar%20minha%20presen%C3%A7a%20no%20coquetel%20de%20inaugura%C3%A7%C3%A3o%20da%20Aur%C3%AAva%20no%20dia%2009%2F10." target="_blank" rel="noopener noreferrer">
+          <span class="detail-icon" aria-hidden="true">◉</span>
+          <div>
+            <span class="detail-label">CONFIRME SUA PRESENÇA</span>
+            <strong>(11) 96926-0809</strong>
+            <small>Fale conosco pelo WhatsApp</small>
+          </div>
+        </a>
+      </div>
+
+      <button class="inauguration-cta" type="button" (click)="openBooking()">
+        Quero participar da inauguração <span aria-hidden="true">→</span>
+      </button>
+
+      <div class="inauguration-signature">
+        <span></span>
+        SUA BELEZA É ÚNICA
+        <span></span>
+      </div>
+    </div>
+  </section>
+
   <app-services (bookingRequested)="openBooking($event)"/>
   <app-why-us/>
   <app-team></app-team>
