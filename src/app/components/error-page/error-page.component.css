@@ -1,0 +1,518 @@
+:host {
+  display: block;
+}
+
+.error-page {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+  min-height: 100dvh;
+
+  overflow: hidden;
+
+  padding: 50px 20px;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(184, 137, 83, .14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(184, 137, 83, .12),
+      transparent 30%
+    ),
+    #f8f1e7;
+
+  color: #342b23;
+}
+
+/* =========================================
+   DECORAÇÕES
+   ========================================= */
+
+.error-decoration {
+  position: absolute;
+
+  width: 360px;
+  height: 360px;
+
+  border: 1px solid rgba(153, 102, 45, .16);
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+.error-decoration::before,
+.error-decoration::after {
+  content: "";
+
+  position: absolute;
+
+  border: 1px solid rgba(153, 102, 45, .10);
+  border-radius: 50%;
+}
+
+.error-decoration::before {
+  inset: 25px;
+}
+
+.error-decoration::after {
+  inset: 55px;
+}
+
+.error-decoration-left {
+  top: -180px;
+  left: -180px;
+}
+
+.error-decoration-right {
+  right: -180px;
+  bottom: -180px;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.error-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(100%, 720px);
+
+  text-align: center;
+}
+
+
+/* =========================================
+   MARCA
+   ========================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  color: #93602e;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 48px;
+  font-style: italic;
+
+  border: 1px solid #b98a58;
+  border-radius: 50%;
+}
+
+.brand-name {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  text-align: left;
+}
+
+.brand-name strong {
+  color: #28221d;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 500;
+
+  letter-spacing: 4px;
+}
+
+.brand-name span {
+  margin-top: 2px;
+
+  color: #796b5d;
+
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+
+/* =========================================
+   LINHA
+   ========================================= */
+
+.error-line {
+  width: 70px;
+  height: 1px;
+
+  margin: 0 auto 32px;
+
+  background: #b98a58;
+}
+
+
+/* =========================================
+   ÍCONE DE STATUS
+   ========================================= */
+
+.status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 76px;
+  height: 76px;
+
+  margin: 0 auto 25px;
+
+  border: 1px solid rgba(164, 108, 51, .35);
+  border-radius: 50%;
+
+  animation: pulse 2s infinite;
+}
+
+.status-icon span {
+  display: block;
+
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #ad7135;
+
+  box-shadow:
+    0 0 0 7px rgba(173, 113, 53, .10),
+    0 0 0 14px rgba(173, 113, 53, .05);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* =========================================
+   TEXTOS
+   ========================================= */
+
+.error-label {
+  margin: 0 0 15px;
+
+  color: #9a622e;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.error-container h1 {
+  margin: 0;
+
+  color: #30271f;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 7vw, 68px);
+  font-weight: 400;
+
+  line-height: 1;
+}
+
+.error-container h1 span {
+  display: block;
+
+  color: #a56c35;
+
+  font-style: italic;
+}
+
+.error-message {
+  max-width: 570px;
+
+  margin: 28px auto 0;
+
+  color: #62574b;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.error-message.secondary {
+  margin-top: 8px;
+
+  color: #8a725a;
+
+  font-size: 13px;
+}
+
+
+/* =========================================
+   BOTÕES
+   ========================================= */
+
+.error-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.primary-button,
+.whatsapp-button {
+  min-height: 48px;
+
+  padding: 0 24px;
+
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease;
+}
+
+.primary-button {
+  border: 1px solid #a86d34;
+
+  background: #a86d34;
+
+  color: white;
+}
+
+.primary-button span {
+  margin-left: 8px;
+
+  font-size: 17px;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 25px rgba(111, 71, 35, .20);
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  border: 1px solid #b9a890;
+
+  background: transparent;
+
+  color: #51473c;
+}
+
+.whatsapp-button:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, .45);
+
+  box-shadow: 0 10px 25px rgba(80, 59, 39, .08);
+}
+
+.whatsapp-icon {
+  font-size: 17px;
+
+  color: #8e6034;
+}
+
+
+/* =========================================
+   ASSINATURA
+   ========================================= */
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 48px;
+
+  color: #806a54;
+
+  font-size: 9px;
+
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.contact-line {
+  width: 55px;
+  height: 1px;
+
+  background: #bba07e;
+}
+
+.copyright {
+  margin: 22px 0 0;
+
+  color: #9a8c7c;
+
+  font-size: 9px;
+  letter-spacing: .5px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .error-page {
+    padding: 35px 18px;
+  }
+
+  .error-decoration {
+    width: 260px;
+    height: 260px;
+  }
+
+  .error-decoration-left {
+    top: -130px;
+    left: -130px;
+  }
+
+  .error-decoration-right {
+    right: -130px;
+    bottom: -130px;
+  }
+
+  .brand {
+    gap: 10px;
+
+    margin-bottom: 24px;
+  }
+
+  .brand-mark {
+    width: 46px;
+    height: 46px;
+
+    font-size: 38px;
+  }
+
+  .brand-name strong {
+    font-size: 25px;
+    letter-spacing: 3px;
+  }
+
+  .brand-name span {
+    font-size: 6px;
+    letter-spacing: 1.2px;
+  }
+
+  .error-line {
+    margin-bottom: 25px;
+  }
+
+  .status-icon {
+    width: 64px;
+    height: 64px;
+
+    margin-bottom: 20px;
+  }
+
+  .error-label {
+    font-size: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  .error-container h1 {
+    font-size: 42px;
+    line-height: 1.02;
+  }
+
+  .error-message {
+    margin-top: 22px;
+
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .error-message.secondary {
+    font-size: 11px;
+  }
+
+  .error-actions {
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-top: 28px;
+  }
+
+  .primary-button,
+  .whatsapp-button {
+    width: 100%;
+  }
+
+  .contact-info {
+    margin-top: 35px;
+
+    gap: 10px;
+
+    font-size: 7px;
+    letter-spacing: 2px;
+  }
+
+  .contact-line {
+    width: 30px;
+  }
+}
+
+
+/* =========================================
+   TELAS MUITO PEQUENAS
+   ========================================= */
+
+@media (max-width: 380px) {
+
+  .error-container h1 {
+    font-size: 36px;
+  }
+
+  .brand-name strong {
+    font-size: 22px;
+  }
+
+  .brand-name span {
+    display: none;
+  }
+}

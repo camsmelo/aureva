@@ -1,10 +1,16 @@
-import { ApplicationConfig } from '@angular/core';
-import { provideHttpClient } from '@angular/common/http';
-import { provideRouter } from '@angular/router';
+import { ApplicationConfig, ErrorHandler } from '@angular/core';
+
+import { GlobalErrorHandler } from './core/global-error-handler';
 
 export const appConfig: ApplicationConfig = {
+
   providers: [
-    provideRouter([]),
-    provideHttpClient()
+
+    {
+      provide: ErrorHandler,
+      useClass: GlobalErrorHandler
+    }
+
   ]
+
 };
