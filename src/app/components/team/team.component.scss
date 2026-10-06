@@ -1,0 +1,384 @@
+.team-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 110px 24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(198, 168, 130, 0.10),
+      transparent 38%
+    ),
+    #f8f5ef;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.team-header {
+  max-width: 850px;
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.team-eyebrow {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #a98768;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 5px;
+}
+
+.team-header h2 {
+  margin: 0 0 20px;
+
+  color: #3e342b;
+
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 400;
+
+  line-height: 1.1;
+}
+
+.team-header p {
+  max-width: 680px;
+  margin: 0 auto;
+
+  color: #81766d;
+
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   GRID DOS 3 CARDS
+========================= */
+
+.team-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  gap: 26px;
+
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.team-card {
+  position: relative;
+  overflow: hidden;
+
+  padding: 24px 24px 38px;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  border: 1px solid rgba(169, 135, 104, 0.15);
+  border-radius: 20px;
+
+  box-shadow:
+    0 10px 35px rgba(74, 59, 47, 0.06);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.45s ease,
+    border-color 0.45s ease;
+}
+
+
+/* brilho suave no card */
+
+.team-card::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.35),
+      transparent 50%
+    );
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease;
+}
+
+
+/* =========================
+   ANIMAÇÃO DO CARD
+========================= */
+
+.team-card.active {
+  transform: translateY(-12px);
+
+  border-color: rgba(169, 135, 104, 0.35);
+
+  box-shadow:
+    0 25px 60px rgba(74, 59, 47, 0.14);
+}
+
+.team-card.active::before {
+  opacity: 1;
+}
+
+
+/* =========================
+   ÁREA DA FOTO
+========================= */
+
+.team-photo {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 4 / 3.2;
+
+  overflow: hidden;
+
+  border-radius: 16px;
+
+  background: #ded8d0;
+}
+
+
+/* =========================
+   PLACEHOLDER DA FOTO
+========================= */
+
+.photo-placeholder {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  color: #958778;
+
+  background:
+    linear-gradient(
+      135deg,
+      #e6e0d9,
+      #d8d0c7
+    );
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  transition:
+    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.6s ease;
+}
+
+.photo-icon {
+  font-size: 45px;
+  font-weight: 300;
+
+  opacity: 0.7;
+}
+
+
+/* zoom quando passa o mouse */
+
+.team-card.active .photo-placeholder {
+  transform: scale(1.055);
+
+  filter: brightness(1.03);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.team-content {
+  padding: 28px 8px 0;
+
+  text-align: center;
+}
+
+.team-role {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #a98768;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+.team-content h3 {
+  margin: 0;
+
+  color: #43382f;
+
+  font-family: Georgia, 'Times New Roman', serif;
+
+  font-size: 27px;
+  font-weight: 400;
+
+  transition:
+    color 0.3s ease,
+    transform 0.4s ease;
+}
+
+
+/* =========================
+   LINHA DOURADA
+========================= */
+
+.team-divider {
+  width: 42px;
+  height: 1px;
+
+  margin: 20px auto;
+
+  background: #b89575;
+
+  transition:
+    width 0.45s ease,
+    opacity 0.45s ease;
+}
+
+.team-card.active .team-divider {
+  width: 75px;
+}
+
+
+/* =========================
+   BIOGRAFIA
+========================= */
+
+.team-content p {
+  max-width: 330px;
+
+  margin: 0 auto;
+
+  color: #81766d;
+
+  font-size: 14px;
+  line-height: 1.75;
+
+  transition:
+    transform 0.45s ease,
+    color 0.45s ease;
+}
+
+
+/* animações internas */
+
+.team-card.active .team-content h3 {
+  transform: translateY(-2px);
+}
+
+.team-card.active .team-content p {
+  transform: translateY(-2px);
+
+  color: #665b52;
+}
+
+
+/* =========================
+   FOTO REAL - PARA DEPOIS
+========================= */
+
+.team-photo img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.team-card.active .team-photo img {
+  transform: scale(1.055);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+  .team-section {
+    padding: 75px 18px;
+  }
+
+  .team-header {
+    margin-bottom: 45px;
+  }
+
+  .team-header h2 {
+    font-size: 36px;
+  }
+
+  .team-header p {
+    font-size: 14px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .team-card {
+    width: 100%;
+    max-width: 450px;
+
+    margin: 0 auto;
+
+    padding: 18px 18px 32px;
+  }
+
+}

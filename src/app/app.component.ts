@@ -4,6 +4,7 @@ import { SiteHeaderComponent } from './components/site-header/site-header.compon
 import { HeroComponent } from './components/hero/hero.component';
 import { ServicesComponent } from './components/services/services.component';
 import { WhyUsComponent } from './components/why-us/why-us.component';
+import { TeamComponent } from './components/team/team.component';
 import { TestimonialsComponent } from './components/testimonials/testimonials.component';
 import { BookingCtaComponent } from './components/booking-cta/booking-cta.component';
 import { BookingModalComponent } from './components/booking-modal/booking-modal.component';
@@ -29,7 +30,9 @@ import { ApplicationErrorService } from './core/application-error.service';
     SiteFooterComponent,
     ContactComponent,
     FloatingSocialsComponent,
-    ErrorPageComponent
+    ErrorPageComponent,
+    ContactComponent,
+    TeamComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
