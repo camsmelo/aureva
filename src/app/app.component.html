@@ -18,16 +18,171 @@
       (bookingRequested)="openBooking()"
     />
 
-    <!-- INAUGURAÇÃO -->
-    <section
-      class="inauguration"
-      id="inauguracao"
-      aria-labelledby="inauguration-title"
+ <section class="inauguration" id="inauguracao">
+  <div class="inauguration-glow glow-left"></div>
+  <div class="inauguration-glow glow-right"></div>
+
+  <div class="inauguration-container">
+
+    <!-- Cabeçalho -->
+    <div class="inauguration-header">
+
+      <div class="event-label">
+        <span></span>
+        EVENTO ESPECIAL · 09/10
+        <span></span>
+      </div>
+
+      <p class="script-title">Coquetel de</p>
+
+      <h2>
+        INAUGURAÇÃO
+        <strong>AURÊVA</strong>
+      </h2>
+
+      <p class="event-description">
+        Venha viver essa experiência de perto, conhecer nosso espaço,
+        nossas tecnologias e nossa equipe de especialistas.
+      </p>
+
+    </div>
+
+    <!-- Data -->
+    <div class="event-date-card">
+
+      <div class="date-column">
+        <span class="date-small">DIA</span>
+        <strong>09</strong>
+      </div>
+
+      <div class="date-divider"></div>
+
+      <div class="date-column">
+        <span class="date-small">MÊS</span>
+        <strong>10</strong>
+      </div>
+
+      <div class="date-divider"></div>
+
+      <div class="date-column">
+        <span class="date-small">HORÁRIO</span>
+        <strong>9H–20H</strong>
+      </div>
+
+    </div>
+
+    <p class="friday">
+      SEXTA-FEIRA
+    </p>
+
+    <!-- Presente -->
+    <div class="special-offer">
+
+      <span class="offer-decoration">✦</span>
+
+      <p class="offer-label">
+        QUEM VIER NO DIA DA INAUGURAÇÃO
+      </p>
+
+      <p class="offer-text">
+        GANHARÁ UM
+      </p>
+
+      <h3>
+        LAVIEEN
+      </h3>
+
+      <p class="offer-description">
+        Tratamento de pele avançado
+      </p>
+
+      <span class="offer-decoration">✦</span>
+
+    </div>
+
+    <!-- Benefícios -->
+    <div class="event-benefits">
+
+      <div class="benefit">
+        <span class="benefit-icon">🥂</span>
+        <strong>Coquetel</strong>
+        <small>Experiência especial</small>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">♫</span>
+        <strong>Música</strong>
+        <small>Ambiente exclusivo</small>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">✦</span>
+        <strong>Brindes</strong>
+        <small>Presentes para você</small>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">◇</span>
+        <strong>Sorteios</strong>
+        <small>Surpresas no evento</small>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">%</span>
+        <strong>Descontos</strong>
+        <small>Condições exclusivas</small>
+      </div>
+
+      <div class="benefit">
+        <span class="benefit-icon">♡</span>
+        <strong>Avaliação gratuita</strong>
+        <small>Na hora</small>
+      </div>
+
+    </div>
+
+    <!-- Local -->
+    <div class="event-location">
+
+      <div class="location-icon">
+        ⌖
+      </div>
+
+      <div>
+        <span>ONDE</span>
+
+        <strong>
+          Rua Morgado de Mateus, 173
+        </strong>
+
+        <small>
+          Vila Mariana · São Paulo - SP
+        </small>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <button
+      type="button"
+      class="inauguration-button"
+      (click)="openBooking()"
     >
+      <span>Quero participar da inauguração</span>
+      <strong>→</strong>
+    </button>
 
-      <!-- conteúdo da inauguração -->
+    <!-- Assinatura -->
+    <div class="event-signature">
+      <span></span>
 
-    </section>
+      SUA BELEZA É ÚNICA
+
+      <span></span>
+    </div>
+
+  </div>
+</section>
 
     <app-services
       (bookingRequested)="openBooking($event)"

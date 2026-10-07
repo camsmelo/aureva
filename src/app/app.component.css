@@ -1,0 +1,711 @@
+/* =========================================================
+   INAUGURAÇÃO AURÊVA
+   ========================================================= */
+
+.inauguration {
+  position: relative;
+  overflow: hidden;
+  padding: 110px 24px;
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(194, 157, 91, 0.14),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #21150f 0%,
+      #2d1c13 45%,
+      #1b110c 100%
+    );
+  color: #f8f1e7;
+}
+
+.inauguration-container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1100px, 100%);
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EFEITOS DE FUNDO
+   ========================================================= */
+
+.inauguration-glow {
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  border-radius: 50%;
+
+  background: rgba(194, 157, 91, 0.08);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+.glow-left {
+  top: -200px;
+  left: -200px;
+}
+
+.glow-right {
+  right: -200px;
+  bottom: -200px;
+}
+
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+.inauguration-header {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.event-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  margin-bottom: 25px;
+
+  color: #d4b16c;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.event-label span {
+  display: block;
+
+  width: 45px;
+  height: 1px;
+
+  background: #d4b16c;
+}
+
+.script-title {
+  margin: 0;
+
+  color: #d8b675;
+
+  font-family: "Georgia", serif;
+
+  font-size: clamp(26px, 4vw, 42px);
+
+  font-style: italic;
+}
+
+.inauguration-header h2 {
+  margin: 5px 0 25px;
+
+  font-size: clamp(42px, 7vw, 76px);
+
+  font-weight: 300;
+
+  letter-spacing: 8px;
+
+  line-height: 1;
+}
+
+.inauguration-header h2 strong {
+  display: block;
+
+  margin-top: 10px;
+
+  color: #d8b675;
+
+  font-weight: 500;
+
+  letter-spacing: 12px;
+}
+
+.event-description {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #d8cec2;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   DATA
+   ========================================================= */
+
+.event-date-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+
+  margin: 55px auto 18px;
+
+  padding: 22px 35px;
+
+  border: 1px solid rgba(216, 182, 117, 0.45);
+
+  background: rgba(255, 255, 255, 0.035);
+
+  backdrop-filter: blur(8px);
+}
+
+.date-column {
+  min-width: 130px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 6px;
+}
+
+.date-small {
+  color: #bca88e;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+}
+
+.date-column strong {
+  color: #e2c98d;
+
+  font-size: 28px;
+
+  font-weight: 400;
+
+  letter-spacing: 2px;
+}
+
+.date-divider {
+  width: 1px;
+  height: 50px;
+
+  background: rgba(216, 182, 117, 0.35);
+}
+
+.friday {
+  margin: 0;
+
+  color: #d8cec2;
+
+  font-size: 12px;
+
+  letter-spacing: 5px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   OFERTA ESPECIAL
+   ========================================================= */
+
+.special-offer {
+  position: relative;
+
+  max-width: 650px;
+
+  margin: 60px auto;
+
+  padding: 42px 30px;
+
+  border-top: 1px solid rgba(216, 182, 117, 0.35);
+  border-bottom: 1px solid rgba(216, 182, 117, 0.35);
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(216, 182, 117, 0.06),
+      transparent
+    );
+}
+
+.offer-decoration {
+  display: block;
+
+  margin: 5px 0 20px;
+
+  color: #d8b675;
+
+  font-size: 20px;
+}
+
+.offer-label {
+  margin: 0 0 15px;
+
+  color: #d8cec2;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  font-weight: 700;
+}
+
+.offer-text {
+  margin: 0;
+
+  color: #cdbb9f;
+
+  font-size: 14px;
+
+  letter-spacing: 3px;
+}
+
+.special-offer h3 {
+  margin: 5px 0;
+
+  color: #e0c589;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(45px, 7vw, 70px);
+
+  font-weight: 400;
+
+  letter-spacing: 8px;
+}
+
+.offer-description {
+  margin: 0;
+
+  color: #e0d7cb;
+
+  font-size: 14px;
+
+  letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   BENEFÍCIOS
+   ========================================================= */
+
+.event-benefits {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+
+  margin: 60px auto;
+
+  max-width: 900px;
+}
+
+.benefit {
+  min-height: 145px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px 15px;
+
+  border: 1px solid rgba(216, 182, 117, 0.18);
+
+  background: rgba(255, 255, 255, 0.025);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.benefit:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(216, 182, 117, 0.55);
+
+  background: rgba(216, 182, 117, 0.07);
+}
+
+.benefit-icon {
+  margin-bottom: 12px;
+
+  color: #d8b675;
+
+  font-size: 25px;
+}
+
+.benefit strong {
+  margin-bottom: 7px;
+
+  color: #eee3d5;
+
+  font-size: 13px;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+.benefit small {
+  color: #a99b8c;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   LOCAL
+   ========================================================= */
+
+.event-location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+
+  max-width: 600px;
+
+  margin: 50px auto;
+
+  padding: 25px;
+
+  border: 1px solid rgba(216, 182, 117, 0.22);
+
+  background: rgba(0, 0, 0, 0.12);
+
+  text-align: left;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(216, 182, 117, 0.4);
+
+  border-radius: 50%;
+
+  color: #d8b675;
+
+  font-size: 22px;
+}
+
+.event-location div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.event-location span {
+  color: #bca88e;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+}
+
+.event-location strong {
+  color: #eee3d5;
+
+  font-size: 16px;
+
+  font-weight: 500;
+}
+
+.event-location small {
+  color: #a99b8c;
+
+  font-size: 13px;
+}
+
+
+/* =========================================================
+   BOTÃO
+   ========================================================= */
+
+.inauguration-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 25px;
+
+  min-width: 290px;
+
+  padding: 17px 28px;
+
+  border: 1px solid #d8b675;
+
+  background: #d8b675;
+
+  color: #261810;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.inauguration-button strong {
+  font-size: 20px;
+
+  font-weight: 400;
+}
+
+.inauguration-button:hover {
+  transform: translateY(-3px);
+
+  background: #e5cb95;
+
+  box-shadow:
+    0 12px 30px rgba(216, 182, 117, 0.2);
+}
+
+
+/* =========================================================
+   ASSINATURA
+   ========================================================= */
+
+.event-signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 55px;
+
+  color: #9e8e7c;
+
+  font-size: 10px;
+
+  letter-spacing: 4px;
+}
+
+.event-signature span {
+  width: 55px;
+  height: 1px;
+
+  background: #8d7c68;
+}
+
+
+/* =========================================================
+   RESPONSIVO
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .inauguration {
+    padding: 80px 18px;
+  }
+
+  .event-label {
+    gap: 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+  .event-label span {
+    width: 25px;
+  }
+
+  .inauguration-header h2 {
+    font-size: 38px;
+
+    letter-spacing: 4px;
+  }
+
+  .inauguration-header h2 strong {
+    letter-spacing: 6px;
+  }
+
+  .event-description {
+    font-size: 14px;
+  }
+
+  .event-date-card {
+    width: 100%;
+
+    padding: 18px 8px;
+  }
+
+  .date-column {
+    min-width: 0;
+
+    flex: 1;
+  }
+
+  .date-column strong {
+    font-size: 21px;
+  }
+
+  .date-small {
+    font-size: 8px;
+
+    letter-spacing: 1px;
+  }
+
+  .date-divider {
+    height: 40px;
+  }
+
+  .friday {
+    font-size: 10px;
+
+    letter-spacing: 3px;
+  }
+
+  .special-offer {
+    margin: 45px auto;
+
+    padding: 35px 15px;
+  }
+
+  .special-offer h3 {
+    font-size: 48px;
+
+    letter-spacing: 5px;
+  }
+
+  .event-benefits {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin: 45px auto;
+  }
+
+  .benefit {
+    min-height: 130px;
+
+    padding: 18px 10px;
+  }
+
+  .benefit strong {
+    font-size: 11px;
+  }
+
+  .benefit small {
+    font-size: 10px;
+  }
+
+  .event-location {
+    align-items: flex-start;
+
+    padding: 20px;
+
+    gap: 15px;
+  }
+
+  .event-location strong {
+    font-size: 14px;
+  }
+
+  .event-location small {
+    font-size: 11px;
+  }
+
+  .inauguration-button {
+    width: 100%;
+
+    min-width: 0;
+
+    padding: 16px 18px;
+
+    gap: 15px;
+  }
+
+  .event-signature {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+  }
+}
+
+
+@media (max-width: 430px) {
+
+  .inauguration {
+    padding: 65px 14px;
+  }
+
+  .script-title {
+    font-size: 27px;
+  }
+
+  .inauguration-header h2 {
+    font-size: 32px;
+
+    letter-spacing: 3px;
+  }
+
+  .inauguration-header h2 strong {
+    letter-spacing: 4px;
+  }
+
+  .event-date-card {
+    margin-top: 40px;
+  }
+
+  .date-column strong {
+    font-size: 18px;
+  }
+
+  .special-offer h3 {
+    font-size: 42px;
+  }
+
+  .event-benefits {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .benefit {
+    min-height: 120px;
+  }
+
+  .event-location {
+    text-align: left;
+  }
+
+  .location-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 18px;
+  }
+}
