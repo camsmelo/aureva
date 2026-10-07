@@ -31,7 +31,6 @@ import { ApplicationErrorService } from './core/application-error.service';
     ContactComponent,
     FloatingSocialsComponent,
     ErrorPageComponent,
-    ContactComponent,
     TeamComponent
   ],
   templateUrl: './app.component.html',

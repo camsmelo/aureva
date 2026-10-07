@@ -1,24 +1,15 @@
 import { ErrorHandler, Injectable, inject } from '@angular/core';
-import { Router } from '@angular/router';
+import { ApplicationErrorService } from './application-error.service';
 
 @Injectable()
 export class GlobalErrorHandler implements ErrorHandler {
 
-  private readonly router = inject(Router);
+  private readonly applicationError = inject(ApplicationErrorService);
 
   handleError(error: unknown): void {
+    console.error('[Aurêva] Erro inesperado na aplicação:', error);
 
-    console.error(
-      '[Aurêva] Erro inesperado na aplicação:',
-      error
-    );
-
-    /*
-     * Evita tentar navegar novamente caso
-     * o próprio componente de erro tenha falhado.
-     */
-    if (!window.location.pathname.includes('/erro')) {
-      this.router.navigate(['/erro']);
-    }
+    // O AppComponent observa este estado e renderiza somente a tela de erro.
+    this.applicationError.show(error);
   }
 }
